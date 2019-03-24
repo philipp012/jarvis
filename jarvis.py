@@ -4,9 +4,9 @@ import os
 import webbrowser
 
 
-def talk(audio):
+def talkToMe(audio):
     print(audio)
-    tts = gTTS(text=audio, lang='eng')
+    tts = gTTS(text=audio, lang='en')
     tts.save('audio.mp3')
     os.system('mpg123 audio.mp3')
 
@@ -14,7 +14,7 @@ def talk(audio):
 # listens for commands
 def command():
     r = sr.Recognizer()
-    with sr.Microphone as source:
+    with sr.Microphone() as source:
         print('I am ready for your next command')
         r.pause_threshold = 1
         r.adjust_for_ambient_noise(source, duration=1)
@@ -38,4 +38,10 @@ def assistant(command):
         webbrowser.get(chrome_path).open(url)
 
     if 'what\'s up' in command:
-        talk('Not much')
+        talkToMe('Not much just chilling, Bruv')
+
+
+talkToMe("I am ready for your Command")
+
+while True:
+    assistant(command())
