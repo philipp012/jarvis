@@ -33,7 +33,7 @@ def command():
 # if statements for executing commands
 def assistant(command):
     if 'open Reddit' in command:
-        chrome_path = '/user/bin/google-chrome'
+        chrome_path = '/usr/bin/google-chrome'
         url = 'https://www.reddit.com'
         webbrowser.get(chrome_path).open(url)
 
