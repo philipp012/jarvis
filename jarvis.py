@@ -65,6 +65,10 @@ def assistant(command):
 
     if 'what\'s up' in command:
         talkToMe('Not much')
+        talkToMe('Not much just chilling, Bruv')
+        
+    if 'open Spotify' in command:
+        os.open('/user/bin/spotify')
 
 
 talkToMe("I am ready for your Command")
