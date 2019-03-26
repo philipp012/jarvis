@@ -25,7 +25,7 @@ def command():
 
     # loop back to continue if not recognized
     except sr.UnknownValueError:
-        assistant(command())
+        print("Ici est-ce que l'error")
 
     return command
 
@@ -37,8 +37,34 @@ def assistant(command):
         url = 'https://www.reddit.com'
         webbrowser.get(chrome_path).open(url)
 
+    if 'open Google' in command:
+        os.system('google-chrome')
+
+    if 'open Spotify' in command:
+        os.system('spotify')
+
+    if 'open whatsapp' in command:
+        os.system('whatsdesk')
+
+    if 'open pycharm' in command:
+        os.system('pycharm')
+
+    if 'open idea' in command:
+        os.system('intellij')
+
+    if 'open Discord' in command:
+        os.system('discord')
+
+    if 'open translate' in command:
+        chrome_path = '/usr/bin/google-chrome'
+        url = 'https://translate.google.com/'
+        webbrowser.get(chrome_path).open(url)
+
+    if 'open mail' in command:
+        os.system('mailspring')
+
     if 'what\'s up' in command:
-        talkToMe('Not much just chilling, Bruv')
+        talkToMe('Not much')
 
 
 talkToMe("I am ready for your Command")
