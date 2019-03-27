@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3671b511-9bc6-48c7-ba2e-7be9ecb51886" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jarvis.py" beforeDir="false" afterPath="$PROJECT_DIR$/jarvis.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jarvis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+            <state relative-caret-position="506">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -41,15 +42,15 @@
       <list>
         <option value="$PROJECT_DIR$/openProgramDemo.py" />
         <option value="$PROJECT_DIR$/srTest.py" />
+        <option value="$PROJECT_DIR$/jarvisReloaded.py" />
         <option value="$PROJECT_DIR$/jarvis.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2670" />
-    <option name="y" value="430" />
-    <option name="width" value="950" />
-    <option name="height" value="982" />
+    <option name="y" value="27" />
+    <option name="width" value="1920" />
+    <option name="height" value="988" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -109,16 +110,18 @@
       <workItem from="1553530561301" duration="1402000" />
       <workItem from="1553537541832" duration="1554000" />
       <workItem from="1553623286789" duration="3216000" />
+      <workItem from="1553701520158" duration="1093000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16718000" />
+    <option name="totallyTimeSpent" value="17811000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="27" width="2560" height="1348" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="988" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10501193" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.106189966" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -132,7 +135,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3293919" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.847973" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.84745765" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32969433" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -153,17 +156,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/openProgramDemo.py" />
-    <entry file="file://$PROJECT_DIR$/srTest.py">
+    <entry file="file://$PROJECT_DIR$/srTest.py" />
+    <entry file="file://$PROJECT_DIR$/jarvisReloaded.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="253">
+          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jarvis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+        <state relative-caret-position="506">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>

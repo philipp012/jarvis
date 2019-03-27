@@ -5,6 +5,7 @@ import webbrowser
 
 
 def talkToMe(audio):
+    # speak
     print(audio)
     tts = gTTS(text=audio, lang='en')
     tts.save('audio.mp3')
@@ -13,6 +14,7 @@ def talkToMe(audio):
 
 # listens for commands
 def command():
+    # record command
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print('I am ready for your next command')
@@ -25,13 +27,14 @@ def command():
 
     # loop back to continue if not recognized
     except sr.UnknownValueError:
-        print("Ici est-ce que l'error")
+        print("Ici est-ce que l'erreur")
 
     return command
 
 
 # if statements for executing commands
 def assistant(command):
+    # Commands
     if 'open Reddit' in command:
         chrome_path = '/usr/bin/google-chrome'
         url = 'https://www.reddit.com'
@@ -66,12 +69,12 @@ def assistant(command):
     if 'what\'s up' in command:
         talkToMe('Not much')
         talkToMe('Not much just chilling, Bruv')
-        
+
     if 'open Spotify' in command:
         os.open('/user/bin/spotify')
 
 
-talkToMe("I am ready for your Command")
-
+# endless loop
 while True:
+    talkToMe("I am ready for your next command: ")
     assistant(command())
