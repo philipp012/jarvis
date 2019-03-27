@@ -17,7 +17,6 @@ def getcommand():
     # record command
     r = sr.Recognizer()
     with sr.Microphone() as source:
-        print('I am ready for your next command')
         r.pause_threshold = 1
         r.adjust_for_ambient_noise(source, duration=1)
         audio = r.listen(source)
@@ -63,23 +62,22 @@ def assistant(command):
         url = 'https://translate.google.com/'
         webbrowser.get(chrome_path).open(url)
 
-    if 'open stackoverflow' in command:
+    if 'open stack overflow' in command:
         chrome_path = '/usr/bin/google-chrome'
         url = 'https://stackoverflow.com/'
+        webbrowser.get(chrome_path).open(url)
+
+    if 'open webmail' in command:
+        chrome_path = '/usr/bin/google-chrome'
+        url = 'https://owa.migros.net/'
         webbrowser.get(chrome_path).open(url)
 
     if 'open mail' in command:
         os.system('mailspring')
 
-    if 'what\'s up' in command:
-        speak('Not much')
-        speak('Not much just chilling, Bruv')
 
-    if 'open Spotify' in command:
-        os.system('spotify')
-
+speak("I am ready for your command")
 
 # endless loop
 while True:
-    speak("I am ready for your next command: ")
     assistant(getcommand())
