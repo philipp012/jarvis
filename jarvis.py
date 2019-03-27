@@ -4,7 +4,7 @@ import os
 import webbrowser
 
 
-def talkToMe(audio):
+def speak(audio):
     # speak
     print(audio)
     tts = gTTS(text=audio, lang='en')
@@ -13,7 +13,7 @@ def talkToMe(audio):
 
 
 # listens for commands
-def command():
+def getcommand():
     # record command
     r = sr.Recognizer()
     with sr.Microphone() as source:
@@ -27,7 +27,7 @@ def command():
 
     # loop back to continue if not recognized
     except sr.UnknownValueError:
-        print("Ici est-ce que l'erreur")
+        command = ''
 
     return command
 
@@ -63,18 +63,23 @@ def assistant(command):
         url = 'https://translate.google.com/'
         webbrowser.get(chrome_path).open(url)
 
+    if 'open stackoverflow' in command:
+        chrome_path = '/usr/bin/google-chrome'
+        url = 'https://stackoverflow.com/'
+        webbrowser.get(chrome_path).open(url)
+
     if 'open mail' in command:
         os.system('mailspring')
 
     if 'what\'s up' in command:
-        talkToMe('Not much')
-        talkToMe('Not much just chilling, Bruv')
+        speak('Not much')
+        speak('Not much just chilling, Bruv')
 
     if 'open Spotify' in command:
-        os.open('/user/bin/spotify')
+        os.system('spotify')
 
 
 # endless loop
 while True:
-    talkToMe("I am ready for your next command: ")
-    assistant(command())
+    speak("I am ready for your next command: ")
+    assistant(getcommand())
